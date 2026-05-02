@@ -12,7 +12,9 @@ app.use(express.json());
 dotenv.config();
 
 
-
+app.get("/demo",(req,res)=>{
+  res.json({message:"app is running"})
+})
 // TEST ROUTE
 app.get("/", (req, res) => {
   res.json({
